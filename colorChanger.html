@@ -9,7 +9,7 @@
 </head>
 
 <div class ="container">
-    <div>
+    <div class = "content">
         <button class="btn">Click Me!</button>
     </div>
 </div>
@@ -65,16 +65,24 @@
         const body = document.querySelector('body');
         body.style.backgroundColor = 'violet';
         let i = 0;
+        
+            
 
 
         button.addEventListener('click', function(){
-            body.style.backgroundColor = colorsArray[i++];
-                if (i >= colorsArray.length){
-                    i = 0;
-                }
+            if (i >= colorsArray.length) {
+                i = 0;
             }
-
+            body.style.backgroundColor = colorsArray[i++];
+            let h1 = document.createElement("h1");
+            let text = document.createTextNode("Hex Color: " + colorsArray[i++]);
+            h1.appendChild(text);
+            document.body.appendChild(h1);
+          
+        }
         )
+
+
         
 
 

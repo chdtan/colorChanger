@@ -13,6 +13,9 @@ button {
     left: 50%;
     margin-top: -50px;
     margin-left: -50px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15%;
 }
 
 .container {
@@ -22,3 +25,10 @@ button {
     height: 100vh;
 }
 
+h1 {
+    position: fixed;
+    top: 45%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
